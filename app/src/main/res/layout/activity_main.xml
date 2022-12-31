@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--on below line we are creating
+    a text for heading of our app-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/idTVHeading"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="QR Code Generator"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <!--We are using this image
+        view to display our QR code-->
+
+    <!--Edit text to enter text
+        for creating a QR code-->
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idEdt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/idIVQrcode"
+        android:autofillHints=""
+        android:hint="Enter your message"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="550dp" /><!---->
+
+    <!--Button for creating a QR code-->
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/idIVQrcode"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="QR Code"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnGenerateQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdt"
+        android:text="Generate QR Code"
+        android:textAllCaps="false"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+</RelativeLayout>
