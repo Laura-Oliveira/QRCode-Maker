@@ -108,6 +108,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+
             fun saveQrcodeImage() {
                 val drawable = img_qrcode.drawable
                 val bitmap = drawable.toBitmap()
@@ -193,56 +194,6 @@ class MainActivity : AppCompatActivity() {
                     saveQrcodeImage()
                 }
             }
-
-
-            /*
-            btn_save_qrcode.setOnClickListener {
-                val drawable = img_qrcode.drawable
-                val bitmap = drawable.toBitmap()
-
-                // Verificar se o armazenamento externo está disponível para escrita
-                if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
-                    val storageDir = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES)
-                    //  getExternalFilesDir(Environment.DIRECTORY_PICTURES)
-                    val directory = File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).getPath(), "QRCode_Screenshots")
-                    val directoryPath = directory.absolutePath
-                    val fileName = "qrcodeImage.jpg"
-                    val imageFile = File(directory, fileName)
-
-                    if (!directory.exists())
-                    {
-                        val isDirectoryCreated = directory.mkdirs()
-                        if (isDirectoryCreated)
-                        {
-                            //diretorio criado
-                            FileOutputStream(imageFile).use { outputStream ->
-                                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
-                                outputStream.flush();
-                                outputStream.close();
-                            }
-
-                            Log.d("Diretorio", directoryPath)
-                            Toast.makeText(applicationContext, "Image saved successfully!", Toast.LENGTH_LONG).show()
-                        } else
-                        {
-                            //falha ao criar o diretorio
-                            Toast.makeText(applicationContext, "Failed to save image", Toast.LENGTH_SHORT).show()
-                        }
-                    } else {
-                        //diretorio ja existe
-                        FileOutputStream(imageFile).use { outputStream ->
-                            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
-                            outputStream.flush();
-                            outputStream.close();
-                        }
-                        Toast.makeText(applicationContext, directoryPath , Toast.LENGTH_SHORT).show()
-                    }
-
-                } else {
-                    Toast.makeText(applicationContext, "External storage not available", Toast.LENGTH_SHORT).show()
-                }
-            }
-    */
         }
     }
 }

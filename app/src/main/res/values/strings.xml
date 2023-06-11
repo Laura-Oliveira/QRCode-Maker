@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">QR_Code</string>
+    <string name="app_name">KEEP IN TOUCH</string>
 
+    <string name="txt_description_image"> Icon that represents the brand app</string>
     <string name="txt_title"> Digital Business Card</string>
-    <string name="txt_title_form"> Insira um link para gerar seu QRCode</string>
-    <string name="input_link">Link</string>
+    <string name="input_link">Insira um Link Aqui</string>
     <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
     <string name="btn_save_qrcode"> SAVE QR CODE </string>
 </resources>

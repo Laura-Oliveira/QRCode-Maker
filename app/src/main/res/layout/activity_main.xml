@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,57 +9,48 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/id_title_qrcode"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:padding="4dp"
-        android:text="@string/txt_title"
-        android:textAlignment="center"
-        android:textColor="@color/purple_700"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_logo"
+        style="@style/Logo"
+        android:contentDescription="@string/txt_description_image"
+        android:src="@mipmap/ic_icon_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_title_form"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/txt_title_form"
-        android:gravity="center"
-        android:layout_marginTop="80dp"
-        android:textColor="@color/purple_500"
-        />
+        android:id="@+id/txt_title"
+        style="@style/TextViewTitle"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logo" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/input_link"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/txt_title_form"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="24dp"
         android:autofillHints="Enter your Link"
         android:hint="@string/input_link"
         android:inputType="text"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_GenerateQRCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/input_link"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="false"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="667dp"
+        android:layout_marginTop="8dp"
         android:text="@string/btn_generate_qrcode"
-        />
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/input_link"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_save_qrcode"
@@ -66,7 +58,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_GenerateQRCode"
         android:text="@string/btn_save_qrcode"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/btn_GenerateQRCode"
+        tools:layout_editor_absoluteX="0dp" />
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/img_qrcode"
@@ -76,12 +69,11 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="false"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginTop="24dp"
         android:contentDescription="QR Code"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save_qrcode"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="215dp" />
+        tools:layout_editor_absoluteX="53dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
