@@ -115,9 +115,7 @@ class MainActivity : AppCompatActivity() {
                 // Verificar se o armazenamento externo está disponível para escrita
                 if (Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED) {
                     val directory = File(
-                        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES).absolutePath,
-                        "QRCode"
-                    )
+                        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).absolutePath)
                     val directoryPath = directory.absolutePath
 
                     val fileName = "qrcodeImage.jpeg"
@@ -132,7 +130,7 @@ class MainActivity : AppCompatActivity() {
                         }
                         Toast.makeText(
                             applicationContext,
-                            "Image saved successfully!" + "existente",
+                            "Image saved successfully!",
                             Toast.LENGTH_SHORT
                         ).show()
 
