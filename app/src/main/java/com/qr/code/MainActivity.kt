@@ -119,7 +119,7 @@ class MainActivity : AppCompatActivity() {
                         Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).absolutePath)
                     val directoryPath = directory.absolutePath
 
-                    val fileName = "qrcodeImage.jpeg"
+                    val fileName = "qrcode.jpeg"
                     val imageFile = File(directoryPath, fileName)
 
                     if (directory.exists()) {
