@@ -46,6 +46,8 @@ dependencies {
    // implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
     implementation 'com.google.zxing:core:3.5.1'
-   // implementation 'com.github.jitpack:gradle-simple:2.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+
+    // implementation 'com.github.jitpack:gradle-simple:2.0'
   //  implementation 'com.github.jitpack:gradle-simple:1.1'
 }

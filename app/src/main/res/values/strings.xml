@@ -3,7 +3,7 @@
 
     <string name="txt_title"> Digital Business Card</string>
     <string name="txt_title_form"> Insira um link para gerar seu QRCode</string>
-    <string name="input_name">Link</string>
+    <string name="input_link">Link</string>
     <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
     <string name="btn_save_qrcode"> SAVE QR CODE </string>
 </resources>

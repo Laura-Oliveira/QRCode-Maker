@@ -36,14 +36,14 @@
         />
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/input_name"
+        android:id="@+id/input_link"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/txt_title_form"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="30dp"
-        android:autofillHints="Enter your Name"
-        android:hint="@string/input_name"
+        android:autofillHints="Enter your Link"
+        android:hint="@string/input_link"
         android:inputType="text"
         tools:ignore="MissingConstraints" />
 
@@ -51,7 +51,7 @@
         android:id="@+id/btn_GenerateQRCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_name"
+        android:layout_below="@id/input_link"
         android:layout_marginTop="20dp"
         android:textAllCaps="false"
         tools:ignore="MissingConstraints"
