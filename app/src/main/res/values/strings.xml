@@ -6,4 +6,7 @@
     <string name="input_link">Insira um Link Aqui</string>
     <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
     <string name="btn_save_qrcode"> SAVE QR CODE </string>
+    <string name="txt_description_selfie"> Selfie </string>
+    <string name="txt_developedBy"> Developed by</string>
+    <string name="txt_developer_name"> Laura Oliveira</string>
 </resources>

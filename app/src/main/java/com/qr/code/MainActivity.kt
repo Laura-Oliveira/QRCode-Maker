@@ -23,10 +23,13 @@ import androidx.core.graphics.drawable.toBitmap
 import java.io.File
 import java.io.FileOutputStream
 import android.Manifest
+import android.content.Intent
+import android.net.Uri
+import android.view.View
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.WriterException
+import com.google.zxing.integration.android.IntentIntegrator.REQUEST_CODE
 import com.journeyapps.barcodescanner.BarcodeEncoder
-import java.net.URL
 
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var listQRCodeData: MutableList<String>
     lateinit var btn_generateQRCode: Button
     lateinit var btn_save_qrcode: Button
+    lateinit var btn_developer_name:Button
 
     // on below line we are creating
     // a variable for bitmap
@@ -57,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         val qrcode_save = QRGSaver()
         btn_generateQRCode = findViewById(R.id.btn_GenerateQRCode)
         btn_save_qrcode = findViewById(R.id.btn_save_qrcode)
+        btn_developer_name = findViewById(R.id.btn_developer_name)
 
         btn_generateQRCode.setOnClickListener {
             // on below line we are checking if msg edit text is empty or not.
@@ -194,6 +199,41 @@ class MainActivity : AppCompatActivity() {
                     saveQrcodeImage()
                 }
             }
+
+            fun openProfileDeveloper()
+            {
+                val url = "https://www.linkedin.com/in/laura-oliveira-mobile/"
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse(url)
+                startActivity(intent)
+            }
+
+            fun checkInternetPermission()
+            {
+            // Verificar se a permissão já foi concedida
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.INTERNET) == PackageManager.PERMISSION_GRANTED) {
+                // Permissão já concedida, pode prosseguir com a ação que requer acesso à Internet
+
+              //  openProfileDeveloper()
+            } else {
+                // Caso a permissão não tenha sido concedida, solicitar permissão
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.INTERNET), REQUEST_CODE)
+              //  openProfileDeveloper()
+            }
+
+            }
+
+
+              btn_developer_name.setOnClickListener {
+                  try {
+                      openProfileDeveloper()
+                  } catch (e: WriterException) {
+                      e.printStackTrace()
+                      Log.d("erro abrir link", e.toString())
+                  }
+
+
+              }
         }
     }
 }
