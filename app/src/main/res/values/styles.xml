@@ -38,43 +38,14 @@
 
         </style>
 
-     <!--   <style name="TextBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">55dp</item>
-            <item name="boxBackgroundColor">@color/background_textbox</item>
-        </style>-->
-
-    <!--    <style name="Button" parent="Widget.MaterialComponents.Button">
+        <style name="Button" parent="Widget.MaterialComponents.Button">
             <item name="android:layout_width">match_parent</item>
             <item name="android:layout_height">70dp</item>
-            <item name="backgroundTint">@color/btn_color</item>
+            <item name="backgroundTint">@color/colorPrimaryDark</item>
             <item name="textAllCaps"> true </item>
-            <item name="textAppearanceButton">@color/txt_color</item>
+            <item name="textAppearanceButton">@color/white</item>
             <item name="android:textSize">15sp</item>
             <item name="fontFamily">sans-serif-black</item>
-        </style>-->
-
-        <style name="TitleRadioGroup" parent="Widget.MaterialComponents.TextView">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:gravity">center_horizontal</item>
-            <item name="android:layout_marginTop">8dp</item>
-            <item name="android:textSize">22sp</item>
-            <item name="android:textStyle">bold</item>
-            <item name="fontFamily">sans-serif-black</item>
-        </style>
-
-        <style name="RadioGroup" parent="Widget.AppCompat.CompoundButton.RadioButton">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">wrap_content</item>
-            <item name="android:gravity">center_horizontal</item>
-            <item name="android:orientation">horizontal</item>
-        </style>
-
-        <style name="RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
-            <item name="android:minWidth">100dp</item>
-            <item name="android:minHeight">50dp</item>
-            <item name="android:textSize">24sp</item>
         </style>
     </resources>
 

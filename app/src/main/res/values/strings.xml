@@ -1,11 +1,16 @@
 <resources>
+    <!-- ==================== TEXTS ==================== -->
     <string name="app_name">QRCode Maker</string>
     <string name="icon_title"> QRCode Maker </string>
     <string name="txt_description_image"> Icon that represents the brand app</string>
-    <string name="input_link">Insert your Link Here</string>
-    <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
-    <string name="btn_save_qrcode"> SAVE QR CODE </string>
     <string name="txt_description_selfie"> Selfie </string>
     <string name="txt_developedBy"> Developed by</string>
     <string name="txt_company_name"> Michi_in </string>
+
+    <!-- ==================== INPUTS ==================== -->
+    <string name="input_link">Insert your Link Here</string>
+
+    <!-- ==================== BUTTONS ==================== -->
+    <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
+    <string name="btn_save_qrcode"> SAVE QR CODE </string>
 </resources>
