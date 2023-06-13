@@ -89,22 +89,39 @@
             style="@style/Logo"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/txt_description_selfie"
-            android:src="@mipmap/ic_selfie_round"
+            android:src="@mipmap/ic_company_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_developedBy" />
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_developer_name"
+            android:id="@+id/btn_company_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/txt_developer_name"
+            android:text="@string/txt_company_name"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_selfie"
             />
+
+    <!--    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txt_company_name"
+            style="@style/Widget.AppCompat.Button"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_company_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_selfie"
+
+            >
+
+        </androidx.appcompat.widget.AppCompatTextView>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

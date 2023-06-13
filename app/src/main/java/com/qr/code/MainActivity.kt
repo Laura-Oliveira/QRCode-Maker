@@ -1,35 +1,31 @@
 package com.qr.code
 
+import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Point
+import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.text.TextUtils
+import android.text.method.LinkMovementMethod
 import android.util.Log
 import android.view.Display
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidmads.library.qrgenearator.QRGContents
 import androidmads.library.qrgenearator.QRGEncoder
-import androidmads.library.qrgenearator.QRGSaver
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
-import java.io.File
-import java.io.FileOutputStream
-import android.Manifest
-import android.content.Intent
-import android.net.Uri
-import android.view.View
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.WriterException
 import com.google.zxing.integration.android.IntentIntegrator.REQUEST_CODE
 import com.journeyapps.barcodescanner.BarcodeEncoder
+import java.io.File
+import java.io.FileOutputStream
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,9 +33,10 @@ class MainActivity : AppCompatActivity() {
     lateinit var img_qrcode: ImageView
     lateinit var input_name: EditText
     lateinit var listQRCodeData: MutableList<String>
+  //  lateinit var txt_company_name:TextView
     lateinit var btn_generateQRCode: Button
     lateinit var btn_save_qrcode: Button
-    lateinit var btn_developer_name:Button
+    lateinit var btn_company_name:Button
 
     // on below line we are creating
     // a variable for bitmap
@@ -56,12 +53,15 @@ class MainActivity : AppCompatActivity() {
 
         img_qrcode = findViewById(R.id.img_qrcode)
         input_name = findViewById(R.id.input_link)
-        var txt_input_name = input_name.text.toString()
+       // txt_company_name = findViewById(R.id.txt_company_name)
         listQRCodeData = mutableListOf(String())
-        val qrcode_save = QRGSaver()
+        //var txt_input_name = input_name.text.toString()
+       // val qrcode_save = QRGSaver()
         btn_generateQRCode = findViewById(R.id.btn_GenerateQRCode)
         btn_save_qrcode = findViewById(R.id.btn_save_qrcode)
-        btn_developer_name = findViewById(R.id.btn_developer_name)
+        btn_company_name = findViewById(R.id.btn_company_name)
+
+      //  txt_company_name.setMovementMethod(LinkMovementMethod.getInstance())
 
         btn_generateQRCode.setOnClickListener {
             // on below line we are checking if msg edit text is empty or not.
@@ -113,6 +113,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
 
             fun saveQrcodeImage() {
                 val drawable = img_qrcode.drawable
@@ -202,11 +203,19 @@ class MainActivity : AppCompatActivity() {
 
             fun openProfileDeveloper()
             {
-                val url = "https://www.linkedin.com/in/laura-oliveira-mobile/"
+                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/company/michi-in/")))
+               /* val url = "https://www.linkedin.com/in/laura-oliveira-mobile/"
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.data = Uri.parse(url)
                 startActivity(intent)
+
+                val urlCompanyName = "${txt_company_name.text}https://www.linkedin.com/company/michi-in/"
+                txt_company_name.setMovementMethod(LinkMovementMethod.getInstance())*/
             }
+
+      /*  fun openProfileDeveloper() {
+            txt_company_name.setMovementMethod(LinkMovementMethod.getInstance())
+        }*/
 
             fun checkInternetPermission()
             {
@@ -224,7 +233,7 @@ class MainActivity : AppCompatActivity() {
             }
 
 
-              btn_developer_name.setOnClickListener {
+              btn_company_name.setOnClickListener {
                   try {
                       openProfileDeveloper()
                   } catch (e: WriterException) {
@@ -236,4 +245,3 @@ class MainActivity : AppCompatActivity() {
               }
         }
     }
-}
