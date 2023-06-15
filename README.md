@@ -24,9 +24,9 @@ Ajudar **pessoas que tem dificulade em repassar informações para manter contat
 
 ## Telas
 <p align="center">
-   <img src="./img/qrcode_maker.png" width="350" height="500"/>
   <img src="./img/print_1.jpg" width="250" height="500"/>
   <img src="./img/print_2.jpg" width="250" height="500"/>
+  <img src="./img/qrcode_maker.png" width="350" height="500"/>
   <img src="./img/michin_logo.jpeg" width="500" height="500"/>
  
  </p>
