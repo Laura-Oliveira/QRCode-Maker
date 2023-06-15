@@ -30,6 +30,18 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    signingConfigs {
+        release {
+            storeFile file("path/to/keystore/file")
+            storePassword "keystore_password"
+            keyAlias "key_alias"
+            keyPassword "key_password"
+            // Adicione a configuração da chave SHA1 aqui
+            sha1Digest "14:36:60:02:91:98:A6:0F:B4:AF:C2:3E:C7:5C:D0:28:50:2B:55:90"
+        }
+    }
+
 }
 
 dependencies {
