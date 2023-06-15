@@ -24,11 +24,11 @@ Ajudar **pessoas que tem dificulade em repassar informações para manter contat
 
 ## Telas
 <p align="center">
-  <img src="./img/splash_screen.jpg" width="250" height="500"/>
-  <img src="./img/login.jpg" width="250" height="500"/>
-  <img src="./img/register_user.jpg" width="250" height="500"/>
-  <img src="./img/register_service.jpg" width="250" height="500"/>
-  <img src="./img/learn_subject.jpg" width="250" height="500"/>
+   <img src="./img/qrcode_maker.png" width="250" height="500"/>
+  <img src="./img/print_1.jpg" width="250" height="500"/>
+  <img src="./img/print_2.jpg" width="250" height="500"/>
+  <img src="./img/michin_logo.jpeg" width="250" height="500"/>
+ 
  </p>
 -------------------------------------------------------------------------------------------------------------------------------------------
 
