@@ -24,12 +24,14 @@ Ajudar **pessoas que tem dificulade em repassar informações para manter contat
 
 ## Telas
 <p align="center">
-   <img src="./img/qrcode_maker.png" width="250" height="500"/>
+   <img src="./img/qrcode_maker.png" width="350" height="500"/>
   <img src="./img/print_1.jpg" width="250" height="500"/>
   <img src="./img/print_2.jpg" width="250" height="500"/>
-  <img src="./img/michin_logo.jpeg" width="250" height="500"/>
+  <img src="./img/michin_logo.jpeg" width="500" height="500"/>
  
  </p>
+
+  Quer tirar sua ideia do papel e tranformar em um aplicativo? <a href="https://www.linkedin.com/company/michi-in/"> **Clique Aqui** </a>
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 # QRCode Maker (en)
@@ -58,9 +60,11 @@ Help **people who have difficulty passing on information to keep in touch**, dur
 
 ## Screens
 <p align="center">
-  <img src="./img/splash_screen.jpg" width="250" height="500"/>
-  <img src="./img/login.jpg" width="250" height="500"/>
-  <img src="./img/register_user.jpg" width="250" height="500"/>
-  <img src="./img/register_service.jpg" width="250" height="500"/>
-  <img src="./img/learn_subject.jpg" width="250" height="500"/>
- </p>
+   <img src="./img/qrcode_maker.png" width="350" height="500"/>
+  <img src="./img/print_1.jpg" width="250" height="500"/>
+  <img src="./img/print_2.jpg" width="250" height="500"/>
+  <img src="./img/michin_logo.jpeg" width="500" height="500"/>
+
+Do you want to build your mobile app? <a href="https://www.linkedin.com/company/michi-in/"> **Click Here** </a>
+-------------------------------------------------------------------------------------------------------------------------------------------
+
