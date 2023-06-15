@@ -60,9 +60,9 @@ Help **people who have difficulty passing on information to keep in touch**, dur
 
 ## Screens
 <p align="center">
-   <img src="./img/qrcode_maker.png" width="350" height="500"/>
   <img src="./img/print_1.jpg" width="250" height="500"/>
   <img src="./img/print_2.jpg" width="250" height="500"/>
+  <img src="./img/qrcode_maker.png" width="350" height="500"/>
   <img src="./img/michin_logo.jpeg" width="500" height="500"/>
 
 Do you want to build your mobile app? <a href="https://www.linkedin.com/company/michi-in/"> **Click Here** </a>
