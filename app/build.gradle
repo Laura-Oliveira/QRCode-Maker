@@ -8,13 +8,14 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.qr.code"
+        applicationId "com.qr.code.maker"
         minSdk 24
         targetSdk 33
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+       // manifestPlaceholders = [sha1Digest: "C8:81:81:54:17:ED:52:4E:B7:91:77:6A:22:20:9B:5C:24:AA:FF:DA"]
     }
 
     buildTypes {
@@ -31,35 +32,34 @@ android {
         jvmTarget = '1.8'
     }
 
-  /*  signingConfigs {
+    signingConfigs {
         release {
-            storeFile file("path/to/keystore/file")
-            storePassword "keystore_password"
-            keyAlias "key_alias"
-            keyPassword "key_password"
-            // Adicione a configuração da chave SHA1 aqui
-            sha1Digest "14:36:60:02:91:98:A6:0F:B4:AF:C2:3E:C7:5C:D0:28:50:2B:55:90"
+            storeFile file("/Users/laura/Documents/Android_Projects/QRCodeMaker/key0")
+            storePassword "com.qr.code.maker"
+            keyAlias "com.qr.code.maker"
+            keyPassword "com.qr.code.maker"
         }
-    }*/
+    }
 
 }
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
-    implementation 'androidx.appcompat:appcompat:1.5.1'
-    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     /* qrcode library */
-   // implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
+    // implementation 'com.journeyapps:zxing-android-embedded:3.4.0'
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.4'
     implementation 'com.google.zxing:core:3.5.1'
-    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0'
 
-    // implementation 'com.github.jitpack:gradle-simple:2.0'
-  //  implementation 'com.github.jitpack:gradle-simple:1.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10'
+
 }

@@ -1,6 +1,6 @@
 <resources>
     <!-- ==================== TEXTS ==================== -->
-    <string name="app_name">QRCode Maker</string>
+    <string name="app_name">QRCodeMaker</string>
     <string name="icon_title"> QRCode Maker </string>
     <string name="txt_description_image"> Icon that represents the brand app</string>
     <string name="txt_description_selfie"> Selfie </string>
@@ -13,4 +13,5 @@
     <!-- ==================== BUTTONS ==================== -->
     <string name="btn_generate_qrcode"> GENERATE QR CODE</string>
     <string name="btn_save_qrcode"> SAVE QR CODE </string>
+    <string name="qr_code">QR Code</string>
 </resources>
