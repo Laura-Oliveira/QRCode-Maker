@@ -10,7 +10,8 @@ import android.Manifest
 import pub.devrel.easypermissions.EasyPermissions
 import pub.devrel.easypermissions.PermissionRequest
 
-class MainViewModel(private val context: Context) : EasyPermissions.PermissionCallbacks {
+class MainViewModel(private val context: Context) : EasyPermissions.PermissionCallbacks
+{
 
     private val REQUEST_CODE_WRITE_STORAGE = 123
 
@@ -21,7 +22,7 @@ class MainViewModel(private val context: Context) : EasyPermissions.PermissionCa
             // Permissões já concedidas, prosseguir com a operação desejada.
             saveImageToGallery()
         }
-        //        else {
+//                else {
 //            // Permissões não concedidas, solicitar permissões.
 //            EasyPermissions.requestPermissions(
 //                EasyPermissions.Builder(context, REQUEST_CODE_WRITE_STORAGE, *permissions)
