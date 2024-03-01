@@ -2,21 +2,24 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_icon_round"
+        android:icon="@mipmap/ic_qrcode"
         android:label="@string/icon_title"
-        android:roundIcon="@mipmap/ic_icon_round"
+        android:roundIcon="@mipmap/ic_qrcode_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QR_Code"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.qr.maker.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

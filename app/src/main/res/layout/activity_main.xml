@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.qr.maker.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,9 +18,8 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/img_logo"
             style="@style/Logo"
-            android:layout_marginTop="72dp"
             android:contentDescription="@string/txt_description_image"
-            android:src="@mipmap/ic_icon_round"
+            android:src="@mipmap/ic_qrcode_round"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,43 +36,63 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_link"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="24dp"
-            android:autofillHints="Enter your Link"
+            style="@style/TextBox"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
             android:hint="@string/input_link"
             android:inputType="text"
-            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_title"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp" />
+            tools:ignore="MissingConstraints" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_GenerateQRCode"
             style="@style/Button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:layout_below="@id/input_link"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_button"
             android:text="@string/btn_generate_qrcode"
             android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/input_link"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp" />
+            tools:ignore="MissingConstraints" />
+
+<!--        <com.google.android.material.divider.MaterialDivider-->
+<!--            android:id="@+id/materialDivider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            app:dividerColor="@color/white"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/btn_GenerateQRCode"-->
+<!--            tools:layout_editor_absoluteX="0dp" />-->
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_save_qrcode"
+            style="@style/Button"
+            android:layout_below="@id/btn_GenerateQRCode"
+            android:layout_marginTop="7dp"
+            android:text="@string/btn_save_qrcode"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_GenerateQRCode" />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/materialDivider_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_GenerateQRCode"
-            android:text="@string/btn_save_qrcode"
-            app:layout_constraintTop_toBottomOf="@+id/btn_GenerateQRCode"
+            android:layout_marginTop="8dp"
+            app:dividerColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn_save_qrcode"
             tools:layout_editor_absoluteX="0dp" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/img_qrcode"
             android:layout_width="305dp"
             android:layout_height="305dp"
+            android:layout_marginTop="24dp"
             android:contentDescription="@string/qr_code"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -80,7 +102,7 @@
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/txt_developedBy"
             style="@style/text"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/txt_developedBy"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +113,7 @@
             style="@style/Logo"
             android:layout_marginTop="8dp"
             android:contentDescription="@string/txt_description_selfie"
-            android:src="@mipmap/ic_company_logo"
+            android:src="@mipmap/ic_company_logo_round"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txt_developedBy" />
@@ -108,22 +130,21 @@
             app:layout_constraintTop_toBottomOf="@+id/img_selfie"
             />
 
-    <!--    <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt_company_name"
-            style="@style/Widget.AppCompat.Button"
-            android:backgroundTint="@color/colorPrimaryDark"
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/txt_company_name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img_selfie"
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/txt_company_name"-->
+<!--            style="@style/Widget.AppCompat.Button"-->
+<!--            android:backgroundTint="@color/colorPrimaryDark"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/txt_company_name"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/img_selfie"-->
 
-            >
-
-        </androidx.appcompat.widget.AppCompatTextView>-->
+<!--            >-->
+<!--        </androidx.appcompat.widget.AppCompatTextView>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -13,4 +13,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- =========== FORMS ===========  -->
+    <color name="outline_textbox"> #1153AB</color>
+    <color name="btn_color">#1153AB</color>
+    <color name="txt_color"> #FCFAFA </color>
+    <color name="hint"> #546E7A</color>
+    <color name="background_textbox"> #EEEEEE</color>
+
+
+    <color name="light_gray">#d0d0d0</color>
+    <color name="medium_gray">#a0a0a0</color>
+    <color name="background">#2b2b2b</color>
 </resources>

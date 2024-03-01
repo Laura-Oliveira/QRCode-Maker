@@ -7,16 +7,16 @@
             <item name="colorAccent">@color/colorAccent</item>
         </style>
 
+    <!-- ============================================ HEADLINE ============================================  -->
         <style name="Logo" parent="Widget.AppCompat.ImageButton">
             <item name="android:layout_width">70dp</item>
             <item name="android:layout_height">70dp</item>
             <item name="android:layout_gravity">center_horizontal</item>
-            <item name="android:layout_marginTop">100dp</item>
+            <item name="android:layout_marginTop">50dp</item>
             <item name="layout_constraintHorizontal_bias">0.5</item>
         </style>
 
     <style name="text" parent="Widget.MaterialComponents.TextView">
-        <item name="android:textColor"> #262B8C </item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
@@ -24,6 +24,8 @@
         <item name="android:textSize">13sp</item>
         <item name="layout_constraintVertical_bias">0.15</item>
         <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textColor"> @color/white</item>
+<!--        <item name="android:textColor"> #262B8C </item>-->
     </style>
 
         <style name="TextViewTitle" parent="Widget.MaterialComponents.TextView">
@@ -35,18 +37,35 @@
             <item name="layout_constraintVertical_bias">0.15</item>
             <item name="fontFamily">sans-serif-black</item>
            <item name="android:textColorPrimary"> #FF3700B3 </item>
-
+            <item name="android:textColor"> @color/white</item>
         </style>
 
+    <!-- ============================================ FORMS ============================================  -->
+    <style name="TextBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="colorOutline">@color/light_gray</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="endIconMode">clear_text</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="textOutlineColor">@color/white</item>
+        <item name="android:background"> @drawable/round_texbox</item>
+
+    </style>
+
         <style name="Button" parent="Widget.MaterialComponents.Button">
-            <item name="android:layout_width">match_parent</item>
-            <item name="android:layout_height">70dp</item>
-            <item name="backgroundTint">@color/colorPrimaryDark</item>
+            <item name="android:layout_width">300dp</item>
+            <item name="android:layout_height">60dp</item>
+            <item name="android:layout_marginTop"> 8dp</item>
+            <item name="android:backgroundTint">@color/colorPrimaryDark</item>
             <item name="textAllCaps"> true </item>
             <item name="textAppearanceButton">@color/white</item>
             <item name="android:textSize">15sp</item>
             <item name="fontFamily">sans-serif-black</item>
         </style>
+
     </resources>
 
 
