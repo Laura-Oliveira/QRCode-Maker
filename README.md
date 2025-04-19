@@ -8,7 +8,7 @@ Desse modo, a pessoa consegue repassar um link com as informações que são mai
 
 Dentro do aplicativo é possível **criar o qrcode a partir do link desejado**, e posteriormente **salvar a imagem gerada do qrcode**.
 
-## Objetivo 
+## Objetivo   
 
 Ajudar **pessoas que tem dificulade em repassar informações para manter contato**, durante situações de netkworing.
 
