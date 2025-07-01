@@ -1,62 +1,22 @@
-# QRCode Maker (pt-br)
+# 📱 QRCode Maker App
 
-QRCode Maker é um **aplicativo Android** focado em **ajudar pessoas que tem dificuldade em criar e manter contatos com outroas pessoas durante momentos de networking em eventos presenciais**.
+A modern Android app to **quickly create, save and share QR codes** from any link.  
+Built with **Kotlin**, **MVVM architecture** and **Material Design**, focusing on clean code, scalability and great user experience.
 
-O aplicativo permite que você **crie um qrcode a partir de qualquer link**.
+## ✨ **Features**
+- Generate QR codes instantly from URLs
+- Save and reuse generated codes
+- Intuitive interface following Material Design guidelines
+- Lightweight and fast performance
 
-Desse modo, a pessoa consegue repassar um link com as informações que são mais importantes para a outra pessoa, durante um momento de networking.
-
-Dentro do aplicativo é possível **criar o qrcode a partir do link desejado**, e posteriormente **salvar a imagem gerada do qrcode**.
-
-## Objetivo   
-
-Ajudar **pessoas que tem dificulade em repassar informações para manter contato**, durante situações de netkworing.
-
-### Tecnologias & Tools
-
-* Kotlin;
-* Material Design;
-* constraintlayout;
-* Gradle;
-* Trello.
+## 🛠 **Tech Stack & Architecture**
+- **Kotlin** – modern, safe and concise language
+- **MVVM architecture** – clear separation of concerns and easier testing
+- **LiveData** – reactive UI updates
+- **Material Design components** – native look & feel
+- **Modular and clean code** – easy to extend and maintain
 
 ### Status: Concluído
-
-## Telas
-<p align="center">
-  <img src="./img/print_1.jpg" width="250" height="500"/>
-  <img src="./img/print_2.jpg" width="250" height="500"/>
-  <img src="./img/qr-code.png" width="500" height="500"/>
-  <img src="./img/michin_logo.jpeg" width="500" height="500"/>
- 
- </p>
-
-  Quer tirar sua ideia do papel e tranformar em um aplicativo? <a href="https://www.linkedin.com/company/michi-in/"> **Clique Aqui** </a>
--------------------------------------------------------------------------------------------------------------------------------------------
-
-# QRCode Maker (en)
-
-QRCode Maker is an **Android App** focused on **helping people who have difficulty to keep in touch with other people during networking moments in events**.
-
-The app allows you to **create a qrcode from any link**.
-
-In this way, the person can input a link with the information that is most important to them, and send to the other person during a networking moment through the qrcode.
-
-Within the application it is possible to **create the qrcode from the desired link**, and **save the generated image of the qrcode**.
-
-## Goal
-
-Help **people who have difficulty passing on information to keep in touch**, during netkworing situations.
-
-### Tecnologias & Tools
-
-* Kotlin;
-* Material Design;
-* constraintlayout;
-* Gradle;
-* Trello.
-
-### Status: Completed.
 
 ## Screens
 <p align="center">
@@ -64,6 +24,8 @@ Help **people who have difficulty passing on information to keep in touch**, dur
   <img src="./img/print_2.jpg" width="250" height="500"/>
   <img src="./img/qr-code.png" width="500" height="500"/>
   <img src="./img/michin_logo.jpeg" width="500" height="500"/>
+ 
+ </p>
 
 Do you want to build your mobile app? <a href="https://www.linkedin.com/company/michi-in/"> **Click Here** </a>
 -------------------------------------------------------------------------------------------------------------------------------------------
